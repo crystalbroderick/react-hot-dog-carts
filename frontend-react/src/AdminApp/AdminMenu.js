@@ -1,41 +1,33 @@
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-import AdminCarts from './AdminCarts';
+import { Routes, Route, Link } from "react-router-dom"
+import AdminCarts from "./AdminCarts"
 // import CompOrderList from "../components/CompOrderList";
 // import OrdersList from "../components/OrdersList";
 // import VendorSettings from "./VendorSettings";
 // import MenuPanel from "./MenuPanel";
 
+function AdminMenu() {
+  return (
+    <div>
+      {/* Vendor Menu - React Router */}
+      <div>
+        <nav>
+          <ul id="adminMenu" className="topnav">
+            <li className="tabcontent">
+              <Link to="/admin">Carts List</Link>
+            </li>
+            <li className="tabcontent">
+              <Link to="/admin/MenuItemInfo">Menu Item List</Link>
+            </li>
+            <li className="tabcontent">
+              <Link to="/admin/Logs">Logs</Link>
+            </li>
+          </ul>
+        </nav>
 
-function AdminMenu () {
-    return (
-        <div>
-            {/* Vendor Menu - React Router */}
-            <Router>
-            <div>
-              <nav>
-                <ul id="adminMenu" className="topnav">
-                  <li className="tabcontent">
-                    <Link to="/admin">Carts List</Link>
-                  </li>
-                  <li className="tabcontent">
-                    <Link to="/admin/MenuItemInfo">Menu Item List</Link>
-                  </li>
-                  <li className="tabcontent">
-                    <Link to="/admin/Logs">Logs</Link>
-                  </li>
-                </ul>
-              </nav>
-
-              {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Route>s and
                   renders the first one that matches the current URL. */}
-              <Switch>
-
-                {/* <Route path="/admin/MenuItemInfo">
+        <Routes>
+          {/* <Route path="/admin/MenuItemInfo">
                   <MenuPanel />
                 </Route>
 
@@ -43,24 +35,17 @@ function AdminMenu () {
                   <VendorSettings />
                 </Route> */}
 
-                <Route path="/admin">
-                  <AdminCarts />
-                </Route>
-
-              </Switch>
-            </div>
-            
-            
-          </Router>
-    
-        </div>
-    )
+          <Route path="/admin" element={<AdminCarts />}></Route>
+        </Routes>
+      </div>
+    </div>
+  )
 }
 
+export default AdminMenu
 
-export default AdminMenu;
-
-{/* 
+{
+  /* 
 // Add active class to the current button (highlight it) 
 const header = document.getElementById("vendorMenu");
 const btns = header.getElementsByClassName("tabcontent");
@@ -71,4 +56,5 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
-*/}
+*/
+}
