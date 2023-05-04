@@ -1,18 +1,25 @@
-import '../App.css';
-import '../Nav.css';
-import Header from'../components/Header';
-import MainBody from '../components/MainBody';
-//import React from "react";
+import Map from "../components/Map"
+import {
+  Container,
+  Divider,
+  Dropdown,
+  Grid,
+  Image,
+  List,
+  Menu,
+  Segment,
+} from "semantic-ui-react"
+import Header from "../components/Header"
 
 function App() {
+  return (
+    <>
+      <Header title="Hot Dog Carts" />
+      <Container>
+        <Map />
+      </Container>
+    </>
+  )
+}
 
-    return (
-        <div className="App">
-         
-          <Header />
-          <MainBody/>
-        </div>
-      );
-    }
-
-export default App;
+export default App

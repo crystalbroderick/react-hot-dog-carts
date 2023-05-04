@@ -1,5 +1,3 @@
-import "./App.css"
-import "./Nav.css"
 import AdminsApp from "./AdminApp/AdminApp"
 import VendorsApp from "./VendorsApp/VendorsApp"
 import CustomersApp from "./CustomersApp/CustomersApp"
@@ -12,7 +10,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/menu" element={<MenuSelection />} />
+        <Route path="/menu/:id" element={<MenuSelection />} />
         <Route path="/admin/*" element={<AdminsApp />} />
         <Route path="/vendor/*" element={<VendorsApp />} />
         <Route path="/" element={<CustomersApp />} />

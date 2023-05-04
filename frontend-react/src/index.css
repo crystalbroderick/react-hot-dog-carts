@@ -1,31 +1,29 @@
 /* ASMT 2 STYLES */
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-html,body {
-  background-color:rgb(212, 61, 35);
-  font-family: 'Monda', sans-serif;
+html,
+body {
+  background-color: rgb(197, 123, 39);
+  font-family: "Monda", sans-serif;
+  overflow: auto;
 }
 
-#wrapper {
-  width: 95%;
-  margin: auto;
-  
-}
 header {
-  background-color: rgb(192, 165, 12);
-  min-height:fit-content;
-  padding: .25em;
+  background-color: #995f4c;
+  max-height: 6em;
+  padding: 0.25em;
   text-align: center;
   border-radius: 200px;
 }
 
-header img {
-  width: 10%;
-  border-radius: 50%; 
+.logo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 h1 {
@@ -41,23 +39,24 @@ h1 {
   top: 1rem;
   left: 1rem;
   color: rgb(212, 61, 35);
+  background-color: #efc64e;
   z-index: 2;
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
+  border-radius: 30px;
 }
 
 .infowindow {
-  display:block;
-  font-family: 'Monda', sans-serif;
-  background-color: rgb(192, 165, 12);
-  padding: 20px;
-  margin: 20px;
+  display: block;
+  font-family: "Monda", sans-serif;
+  margin: 3px;
   min-width: 100px;
+  border-color: #995f4c;
 }
 
 .infowindow h2 {
-  background-color: rgb(212, 61, 35);
-  margin-bottom: .25em;
+  color: rgb(212, 61, 35);
+  margin-bottom: 0.25em;
 }
 
 .infowindow h5 {
@@ -65,22 +64,8 @@ h1 {
 }
 
 .infowindow p {
-  margin:.25em;
-  font-family: 'Monda', sans-serif;
-}
-
-.infowindow button {
-  clear: both;
-  background-color:rgba(22, 63, 5, 0.123);
-  color: whitesmoke;
-  border-radius: 30px;
-  border: solid .25em #1444;
-  padding: 0.5em 4em;
-  /* margin: 1em 0em 1em 1em; */
-  margin: 0 auto;
-  display: block;
-  text-align:center;
-  font-family: 'Monda', sans-serif;
+  margin: 0.25em;
+  font-family: "Monda", sans-serif;
 }
 
 .placeholder {
@@ -89,31 +74,29 @@ h1 {
 
 .Availability {
   clear: both;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-radius: 10px;
-  border: thin .25em #1444;
+  border: thin 0.25em #1444;
   padding: 0.5em 1em;
   /* margin: 1em 0em 1em 1em; */
   margin-top: 50px;
   margin-left: 100px;
   font-size: 1.5em;
-  font-family: 'Calibri', sans-serif;
-  
+  font-family: "Calibri", sans-serif;
 }
 
-.Location{
+.Location {
   clear: both;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-radius: 10px;
-  border: thin .25em #1444;
+  border: thin 0.25em #1444;
   padding: 0.5em 1em;
   /* margin: 1em 0em 1em 1em; */
   margin-top: 60px;
   display: inline-block;
   margin-left: 100px;
-  font-family: 'Calibri', sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 1.5em;
-  
 }
 /* .Longitude {
   position: relative;
@@ -130,13 +113,12 @@ h1 {
   
 } */
 
-
 .form-control {
   margin: 20px 0;
   font-size: 1.3em;
   font-weight: bold;
   margin-left: 100px;
-  margin-top: 50px;;
+  margin-top: 50px;
 }
 
 .form-control label {
@@ -171,17 +153,16 @@ h1 {
   margin: 1em;
 }
 
-
 .main {
-  float:left;
-  width:60%;
+  float: left;
+  width: 60%;
   background-color: white;
   margin-bottom: 2em;
 }
 
 .aside {
   float: right;
-  width:40%;
+  width: 40%;
 }
 
 /* left and right unequal columns for menu*/
@@ -192,69 +173,65 @@ h1 {
 }
 
 .left {
-  width:75%;
+  width: 75%;
 }
 
 .right {
-  width:25%;
-  
+  width: 25%;
 }
 
-.MenuList{
+.MenuList {
   clear: both;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-radius: 10px;
-  border: thin .25em #1444;
+  border: thin 0.25em #1444;
   padding: 0.5em 1em;
   /* margin: 1em 0em 1em 1em; */
   margin: 20px;
   display: inline-block;
   margin-left: 100px;
-  font-family: 'Calibri', sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 1.5em;
-  
 }
 .btn {
   clear: both;
   background-color: green;
- float: right;
-  border: solid .25em #1444;
+  float: right;
+  border: solid 0.25em #1444;
   padding: 0.5em 1em;
   /* margin: 1em 0em 1em 1em; */
   display: block;
   margin-top: 100px;
-  text-align:center;
-  font-family: 'Calibri', sans-serif;
+  text-align: center;
+  font-family: "Calibri", sans-serif;
   font-size: 1em;
-color: #f4f4f4;
+  color: #f4f4f4;
 }
 
-.container {
-  max-width: 600px;
-  margin: 30px auto;
+/* .container {
+  max-width: 80%;
+  margin: 0.5em auto;
   overflow: auto;
   min-height: 400px;
   border: 2px solid black;
   padding: 30px;
   border-radius: 5px;
   background: lightgrey;
-}
-
+} */
 
 p {
   /* background-color: aquamarine; */
-  padding:2.5%;
-  margin-top:1em;
-  font-family: 'Tahoma', sans-serif;
+  padding: 2.5%;
+  margin-top: 1em;
+  font-family: "Tahoma", sans-serif;
 }
 
 a {
-  color:mediumblue;
+  color: mediumblue;
   text-decoration: none;
   /*background-color: rgb(180, 179, 170); */
   border-radius: 25px;
 }
-
 
 .tabcontent {
   border: 1px solid;
@@ -262,14 +239,14 @@ a {
 }
 
 .mapimage {
-  width:90%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 img {
-  margin-top: .5em;
+  margin-top: 1.5em;
   width: 90%;
 }
 
@@ -279,20 +256,19 @@ footer {
 }
 button {
   clear: both;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border-radius: 30px;
-  border: solid .25em #1444;
+  border: solid 0.25em #1444;
   padding: 0.5em 4em;
   /* margin: 1em 0em 1em 1em; */
   margin: 0 auto;
   display: block;
-  text-align:center;
-  font-family: 'Calibri', sans-serif;
+  text-align: center;
+  font-family: "Calibri", sans-serif;
 }
 
 .order-button {
   margin: 0 auto;
-  
 }
 
 /* OrderEntry Sample css */
@@ -309,12 +285,10 @@ button {
   justify-content: space-between;
 }
 
-
-
 .userimg {
   background-color: green;
   border: 2px solid black;
-  margin: .5em;
+  margin: 0.5em;
   width: 7%;
   height: auto;
   border-radius: 50%;
@@ -327,7 +301,8 @@ button {
   text-align: left;
 }
 
-.orderdetails p, .ordertotal p {
+.orderdetails p,
+.ordertotal p {
   padding: 0;
 }
 
@@ -342,7 +317,7 @@ button {
 }
 
 .completed .ordertotal {
-  background-color:darkgreen;
+  background-color: darkgreen;
   padding: 1em;
   width: 15%;
   height: 70%;
@@ -351,7 +326,7 @@ button {
   text-align: center;
 }
 
-/* END ORDER ENTRY SAMPLE CSS */ 
+/* END ORDER ENTRY SAMPLE CSS */
 
 /* STAR]T CHECKBOX FORM STYLES 
 .checkbox {
@@ -396,63 +371,60 @@ button {
 /* START RESPONSIVE STYLES */
 
 /* DESKTOP */
-@media all and (min-width:1200px) {
+@media all and (min-width: 1200px) {
   img.desktop {
-    width:100%;
-    display:inline-block;
+    width: 100%;
+    display: inline-block;
   }
 
   img.mobile {
-    display:none;
+    display: none;
   }
   .column {
-    flex: 1
+    flex: 1;
   }
   .double-column {
-    flex: 2
+    flex: 2;
   }
-
 }
 
 /* TABLET */
-@media all and (min-width:701px) and (max-width:1200px) {
+@media all and (min-width: 701px) and (max-width: 1200px) {
   img.mobile {
-    display:none;  
-}
-
-
+    display: none;
+  }
 }
 
 /* BIG PHONE */
-@media all and (max-width:700px) {
+@media all and (max-width: 700px) {
   img.desktop {
-    display:none;  
+    display: none;
   }
 
   .main {
     background-color: white;
-  width: 100%;
-  display: block;
-  /* float:none; */
-  margin: 0 auto;
-}
-.aside {
-  width: 90%;
-  display: block;
-  padding: 5%;
-  /*float:none; */
-  margin: 0 auto;
-} 
+    width: 100%;
+    display: block;
+    /* float:none; */
+    margin: 0 auto;
+  }
+  .aside {
+    width: 90%;
+    display: block;
+    padding: 5%;
+    /*float:none; */
+    margin: 0 auto;
+  }
 
-.left {
-  width: 60%;
-}
+  .left {
+    width: 60%;
+  }
 
   h1 {
     line-height: 2em;
   }
-  header img {
-    margin: .1em;
+  .logo {
+    margin: 0.1em;
     /* margin-top: .1em;
     margin-bottom: .1em;
     margin-left:3em; */
@@ -465,25 +437,24 @@ button {
   }
 
   img.mobile {
-    width:95%;
-    display:inline-block;
+    width: 95%;
+    display: inline-block;
   }
 }
 
 /* SMALL PHONE */
-@media all and (max-width:400px) {
+@media all and (max-width: 400px) {
   #wrapper {
     width: 100%;
   }
 
-  
   img.desktop {
-    display:none;  
+    display: none;
   }
 
   img.mobile {
-    width:95%;
-    display:inline-block;
+    width: 95%;
+    display: inline-block;
   }
 }
 
